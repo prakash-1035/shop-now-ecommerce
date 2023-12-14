@@ -1,0 +1,118 @@
+.product-details {
+  max-width: $maxWidth;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  > .images {
+    margin: 20px;
+    padding: 20px;
+    > img {
+      width: 90%;
+    }
+  }
+
+  > .details {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 10px;
+    gap: 10px;
+
+    > hr {
+      border: 1px solid gray;
+      margin: 5px 0;
+    }
+    > .title {
+      text-transform: capitalize;
+      font: 400 1.8rem $roboto;
+    }
+    > .rating {
+      display: flex;
+      align-items: center;
+
+      > span {
+        font: 400 1.1rem $roboto;
+        margin-top: 6px;
+        margin-left: 10px;
+      }
+    }
+
+    > .price-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      > .price {
+        font: 600 1.7rem $roboto;
+        letter-spacing: 1px;
+      }
+
+      > .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > div {
+          .pos,
+          .neg,
+          .cart-btn {
+            padding: 10px 20px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font: 600 1.2rem $roboto;
+          }
+          .pos {
+            background-color: rgb(203, 253, 203);
+            &:hover {
+              background-color: rgb(151, 243, 151);
+            }
+          }
+          .neg {
+            margin-left: 0;
+            background-color: rgb(255, 214, 214);
+            &:hover {
+              background-color: rgb(255, 152, 152);
+            }
+          }
+          .cart-btn {
+            background-color: $bg-primary;
+            &:hover {
+              background-color: $bg-secondary;
+            }
+          }
+        }
+      }
+    }
+
+    > .discription {
+      h1 {
+        padding: 10px 0 10px 0;
+        font: 500 1.5rem $openSans;
+        letter-spacing: 2px;
+      }
+      p {
+        letter-spacing: 1px;
+        line-height: 20px;
+      }
+    }
+
+    > .review {
+      margin-top: 30px;
+      > button {
+        padding: 10px 20px;
+        margin: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font: 600 1.2rem $roboto;
+        background-color: $bg-primary;
+        &:hover {
+          background-color: $bg-secondary;
+        }
+      }
+    }
+  }
+}

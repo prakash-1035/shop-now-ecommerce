@@ -1,0 +1,79 @@
+.login-profile {
+    > svg {
+        color: green;
+        height: 80px;
+        width: 80px;
+        border: 1px solid blue;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    h3 {
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}
+
+.custom-login-btn {
+    color: #198754;
+    border: 1px solid #198754;
+    border-radius: 6px;
+    padding: 0 10px;
+    font-weight: 400;
+    display: inline;
+    width: fit-content;
+    transition: all 0.2s linear;
+    &:hover {
+        > a {
+            color: white;
+        }
+        background-color: #198754;
+    }
+}
+.custom-logout-btn {
+    &:active {
+        background-color: rgb(209, 209, 209);
+    }
+}
+// profile page custom style
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #682773;
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none;
+}
+
+.edit-btn {
+    background-color: #c10495;
+}
+
+.add-experience:hover {
+    background: #ba68c8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #ba68c8;
+}
+.myshadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+.cart-btn-custom {
+    &:hover {
+        transition: all 0.2s linear;
+        background-color: rgb(214, 214, 214);
+    }
+}
